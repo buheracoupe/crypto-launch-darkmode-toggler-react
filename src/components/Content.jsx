@@ -1,4 +1,5 @@
 import React from 'react'
+import ReleaseTracker from './ReleaseTracker'
 
 function Content() {
   return (
@@ -28,6 +29,7 @@ function Content() {
         <p>15+</p>
     </div>
 </div>
+<ReleaseTracker />
 </div>
   )
 }

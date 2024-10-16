@@ -8,7 +8,7 @@ function Header() {
     <p className='p-2'>  21 January 2025</p>
     <p className='p-2'>Rainbow Towers, Harare, Zimbabwe</p>
 </div>
-<button className='bg-black dark:bg-orange-600 dark:text-white text-orange-500 p-2 rounded-md'>Get Your Tickets</button>
+<button className='bg-black font-semibold dark:bg-orange-600 dark:text-white text-orange-500 p-2 rounded-md'>Get Your Tickets</button>
 </div>
 )
 }

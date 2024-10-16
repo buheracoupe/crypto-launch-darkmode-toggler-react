@@ -11,7 +11,7 @@ function App() {
     console.log(document.body.classList)
   }
   return (
-    <div className="App dark:bg-black h-lvh overflow-hidden font-Quicksand">
+    <div className="App dark:bg-black min-h-screen font-Quicksand">
       <Header />
       <Content />
       <button onClick={changeMode} className='bg-black dark:bg-orange-400 dark:text-white p-2 hover:bg-slate-600
