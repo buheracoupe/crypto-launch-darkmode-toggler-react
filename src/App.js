@@ -14,7 +14,8 @@ function App() {
     <div className="App dark:bg-black h-lvh overflow-hidden font-Quicksand">
       <Header />
       <Content />
-      <button onClick={changeMode} className='bg-black dark:bg-orange-400 dark:text-white p-2 hover:bg-slate-600 text-orange-500 w-16 rounded-md absolute bottom-4 right-8 md:bottom-12 md:right-24'>Dark</button>
+      <button onClick={changeMode} className='bg-black dark:bg-orange-400 dark:text-white p-2 hover:bg-slate-600
+       text-orange-500 w-16 rounded-md absolute bottom-4 right-8 md:bottom-12 md:right-24'>{isDarkMode? "Dark" : "Light"}</button>
     </div>
   );
 }
