@@ -1,21 +1,16 @@
 import Header from './components/Header';
 import Content from './components/Content';
 import { useState } from 'react';
+import DarkModeToggle from './components/DarkModeToggle';
+
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  function changeMode(){
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark');
-    console.log(document.body.classList)
-  }
+    
   return (
-    <div className="App dark:bg-black min-h-screen font-Quicksand">
+    <div className="App relative dark:bg-black m-0 mt-[-1rem] p-4 min-h-screen font-Quicksand">
       <Header />
       <Content />
-      <button onClick={changeMode} className='bg-black dark:bg-orange-400 dark:text-white p-2 hover:bg-slate-600
-       text-orange-500 w-16 rounded-md absolute bottom-4 right-8 md:bottom-12 md:right-24'>{isDarkMode? "Dark" : "Light"}</button>
+      <DarkModeToggle />
     </div>
   );
 }
